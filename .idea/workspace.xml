@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Turing_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Turing_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Turing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Five.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Five.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TuringMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TuringMachine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/TuringMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+            <state relative-caret-position="529">
+              <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,7 +61,17 @@
       <find>turi</find>
       <find>Listener</find>
       <find>MoveTape</find>
+      <find>rule</find>
+      <find>icon</find>
+      <find>substring</find>
+      <find>State</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\der Lehre\3Kurs\Teo Info\Turing</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,8 +87,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+    <option name="x" value="43" />
+    <option name="y" value="46" />
+    <option name="width" value="936" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectId" id="1akdNb6iutpQEmWkOPHisslmY3L" />
@@ -93,6 +107,17 @@
               <item name="Turing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Turing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Turing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Turing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Turing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Turing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -109,10 +134,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\der Lehre\3Kurs\Teo Info\Turing\img" />
+      <recent name="D:\der Lehre\3Kurs\Teo Info\Turing\src\com\company" />
+      <recent name="D:\der Lehre\3Kurs\Teo Info\Turing" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,13 +182,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Turing.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Turing_jar/Turing.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.TuringMachine" />
+      <item itemvalue="JAR Application.Turing.jar" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TuringMachine" />
+        <item itemvalue="JAR Application.Turing.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -171,12 +209,20 @@
       <option name="presentableId" value="Default" />
       <updated>1587283486927</updated>
       <workItem from="1587442060042" duration="6907000" />
-      <workItem from="1587520571276" duration="12873000" />
+      <workItem from="1587520571276" duration="22743000" />
     </task>
+    <task id="LOCAL-00001" summary="Comment">
+      <created>1587540347780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587540347780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19780000" />
+    <option name="totallyTimeSpent" value="29650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -191,13 +237,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -215,6 +261,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587283921608">
@@ -269,8 +319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TuringMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="157" column="42" lean-forward="true" selection-start-line="157" selection-start-column="42" selection-end-line="157" selection-end-column="42" />
+        <state relative-caret-position="529">
+          <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

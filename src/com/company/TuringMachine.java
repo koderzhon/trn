@@ -139,7 +139,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         }
     }
 
-    private void ExecuteSingleStep() // выполняет шаг
+    private void ExecuteSingleStep() // выполнение шага
     {
         if (!State.equals("HALT"))
         {
@@ -170,20 +170,21 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         String Move = rule.substring(6, 7);
         String NewState = rule.substring(8, 9);
 
-        System.out.println("Executing value " + RuleValue + " state " + RuleState);
-        System.out.println("New value " + NewValue + "  Move " + Move + "  New State " + NewState);
+        //вывод в консоли
+        System.out.println("Выполняемое значение " + RuleValue + " Состояние " + RuleState);
+        System.out.println("Новое значение " + NewValue + "  Шаг в " + Move + "  Новое значение " + NewState);
 
-        // Set the new value
+        // Установка нового значение
         if (!NewValue.equals("*"))
             TapeCurrent = NewValue;
 
-        // Move the tape or halt
+        // Переместить ленту
         if (Move.equals("L"))
             MoveTape("Left");
         else if (Move.equals("R"))
             MoveTape("Right");
 
-        // Set the new state
+        // Остоновить или Установить новое состояние
         if (Move.equals("H"))
             State = "HALT";
         else
@@ -221,7 +222,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         lblTapeCurrent.setText(TapeCurrent);
         lblTapeRight.setText(TapeRight);
 
-        lblState.setText("State: " + State + "   ");
+        lblState.setText("Сосотояние: " + State + "   ");
     }
 
     private void LoadFile(File file)
@@ -230,17 +231,17 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         {
             BufferedReader in = new BufferedReader(new FileReader(file));
 
-            // The first line is the initial tape value
+            // Первая строка - начальное значение ленты
             String TapeLine = in.readLine();
             TapeLeft = "";
             TapeCurrent = TapeLine.substring(0,1);
             TapeRight = TapeLine.substring(1);
 
-            // The first character of the next line is the initial state
+            // Первый символ следующей строки - начальное состояние
             String StateLine = in.readLine();
             State = StateLine.substring(0,1);
 
-            // The remaining lines are the program
+            // Остальные строки программы
             Program = new ArrayList<String>();
             String ProgramLine;
             do
@@ -256,7 +257,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         catch (Exception ex)
         {
             JOptionPane.showMessageDialog(this,
-                    "Error in program file.", "Turing Machine",
+                    "Ошибка в файле программы.", "Машина Тьюринга",
                     JOptionPane.INFORMATION_MESSAGE);
         }
         UpdateDisplay();
