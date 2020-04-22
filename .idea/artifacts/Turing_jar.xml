@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Turing:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="Turing.jar">
+      <element id="module-output" name="Turing" />
+    </root>
+  </artifact>
+</component>

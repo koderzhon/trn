@@ -1,0 +1,14 @@
+_
+A
+_ A 1 R B
+_ B 0 R C
+_ C 1 R D
+_ D 1 R E
+_ E 1 R F
+_ F 0 L E
+1 E 1 L D
+1 D 0 L C
+1 C 1 L B
+1 B 0 * B
+0 B 1 L A
+1 A * H A
