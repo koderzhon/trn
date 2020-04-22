@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Turing_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Turing_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/Turing.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Five.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Five.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TuringMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TuringMachine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/TuringMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
+            <state relative-caret-position="342">
+              <caret line="260" column="53" selection-start-line="260" selection-start-column="53" selection-end-line="260" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587283486927</updated>
       <workItem from="1587442060042" duration="6907000" />
-      <workItem from="1587520571276" duration="22743000" />
+      <workItem from="1587520571276" duration="24550000" />
     </task>
     <task id="LOCAL-00001" summary="Comment">
       <created>1587540347780</created>
@@ -222,11 +217,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29650000" />
+    <option name="totallyTimeSpent" value="31457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -245,7 +239,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -319,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/TuringMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="260" column="56" selection-start-line="260" selection-start-column="56" selection-end-line="260" selection-end-column="56" />
+        <state relative-caret-position="342">
+          <caret line="260" column="53" selection-start-line="260" selection-start-column="53" selection-end-line="260" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
