@@ -1,5 +1,6 @@
 package com.company;
 
+//импорт нужных паккетов
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedReader;
@@ -13,11 +14,12 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
 
 
-    public static void main(String [] args)
+    public static void main(String [] args) //запуск программы
     {
         new TuringMachine();
     }
 
+    //создаём кнопки и компоненты JLabel для отоброжение цифр
     private JLabel lblTapeLeft;
     private JLabel lblTapeCurrent;
     private JLabel lblTapeRight;
@@ -26,8 +28,6 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private JButton btnStep;
     private JButton btnReset;
     private JButton btnLoad;
-
-
 
     private String TapeLeft = "";
     private String TapeCurrent = "";
@@ -41,6 +41,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
     public TuringMachine()
     {
+        //устанавливаем иконку, размер, названия для нашего приложение
         this.setIconImage(new ImageIcon("img//icon.png").getImage());
         this.setSize(500,150);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -48,7 +49,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         this.setLayout(new BorderLayout());
 
         try {
-            setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); //принимает оформление системы для внутренных компонентов
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
@@ -59,10 +60,11 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
             e.printStackTrace();
         }
 
-        JFrame.setDefaultLookAndFeelDecorated(true);
+        JFrame.setDefaultLookAndFeelDecorated(true); //принимает оформление системы для внешних компонентов
 
-        JPanel panel1 = new JPanel();
+        JPanel panel1 = new JPanel();   //создаём панель для отоброжение цифр
 
+        //создаём компоненты для отоброжение цифр и добовляем в панель1
         lblTapeLeft = new JLabel();
         lblTapeCurrent = new JLabel();
         lblTapeRight = new JLabel();
@@ -74,7 +76,9 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         panel1.add(lblTapeCurrent);
         panel1.add(lblTapeRight);
 
-        JPanel panel2 = new JPanel();
+        JPanel panel2 = new JPanel();    //создаём панель для кнопок
+
+        //далее описоваем кнопки и добовляем в панель2
 
         lblState = new JLabel("");
         panel2.add(lblState);
@@ -95,35 +99,35 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         btnLoad.addActionListener(e -> btnLoadClick() );
         panel2.add(btnLoad);
 
-        this.add(panel1, BorderLayout.NORTH);
-        this.add(panel2, BorderLayout.SOUTH);
+        this.add(panel1, BorderLayout.NORTH); //добовляем панели в наше окно приложение
+        this.add(panel2, BorderLayout.SOUTH); //
 
-        this.setVisible(true);
+        this.setVisible(true); //видемость окна
 
         UpdateDisplay();
 
     }
 
-    private void btnGoClick()
+    private void btnGoClick() //реализация кнопки Выполнить всё
     {
-        do
+        do //цикл что бы выполнять до остоновки
         {
             ExecuteSingleStep();
         }while (!State.equals("HALT"));
     }
 
-    private void btnStepClick()
+    private void btnStepClick() //реализация кнопки По Шагова
     {
         ExecuteSingleStep();
     }
 
-    private void btnResetClick()
+    private void btnResetClick() //реализация кнопки Сброса
     {
         LoadFile(ProgramFile);
         UpdateDisplay();
     }
 
-    private void btnLoadClick()
+    private void btnLoadClick()  //реализация кнопки Загрузить
     {
         JFileChooser fc = new JFileChooser();
         int result = fc.showOpenDialog(this);
@@ -135,7 +139,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         }
     }
 
-    private void ExecuteSingleStep()
+    private void ExecuteSingleStep() // выполняет шаг
     {
         if (!State.equals("HALT"))
         {
