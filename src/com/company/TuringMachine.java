@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import static javax.swing.UIManager.setLookAndFeel;
 
+
 public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 {
 
@@ -28,6 +29,8 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private JButton btnStep;
     private JButton btnReset;
     private JButton btnLoad;
+    private JTextArea proces;
+    //private Font font;
 
     private String TapeLeft = "";
     private String TapeCurrent = "";
@@ -43,7 +46,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     {
         //устанавливаем иконку, размер, названия для нашего приложение
         this.setIconImage(new ImageIcon("img//icon.png").getImage());
-        this.setSize(500,150);
+        this.setSize(500,180);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle(" Машина Тьюринга");
         this.setLayout(new BorderLayout());
@@ -63,18 +66,26 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         JFrame.setDefaultLookAndFeelDecorated(true); //принимает оформление системы для внешних компонентов
 
         JPanel panel1 = new JPanel();   //создаём панель для отоброжение цифр
+        JPanel panel3 = new JPanel();
 
         //создаём компоненты для отоброжение цифр и добовляем в панель1
         lblTapeLeft = new JLabel();
         lblTapeCurrent = new JLabel();
         lblTapeRight = new JLabel();
+        //Font font = new Font("Courier", Font.PLAIN, 12);
+        proces = new JTextArea(2,45);
         lblTapeLeft.setFont(new Font("Monospaced", Font.PLAIN,24));
         lblTapeCurrent.setFont(new Font("Monospaced", Font.BOLD,24));
         lblTapeRight.setFont(new Font("Monospaced", Font.PLAIN,24));
         lblTapeCurrent.setForeground(Color.RED);
+        proces.setFont(new Font("Monospaced", Font.PLAIN,12));
+        proces.setBackground(null);
+        proces.setEditable(false);
+        proces.setFocusable(false);
         panel1.add(lblTapeLeft);
         panel1.add(lblTapeCurrent);
         panel1.add(lblTapeRight);
+        panel3.add(proces);
 
         JPanel panel2 = new JPanel();    //создаём панель для кнопок
 
@@ -100,6 +111,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         panel2.add(btnLoad);
 
         this.add(panel1, BorderLayout.NORTH); //добовляем панели в наше окно приложение
+        this.add(panel3,BorderLayout.CENTER);
         this.add(panel2, BorderLayout.SOUTH); //
 
         this.setVisible(true); //видемость окна
@@ -124,6 +136,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private void btnResetClick() //реализация кнопки Сброса
     {
         LoadFile(ProgramFile);
+        proces.setText("");
         UpdateDisplay();
     }
 
@@ -162,6 +175,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         return (RuleValue.equals(TapeCurrent)) & (RuleState.equals(State));
     }
 
+
     private void ExecuteRule(String rule)
     {
         String RuleValue = rule.substring(0,1);
@@ -170,25 +184,33 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         String Move = rule.substring(6, 7);
         String NewState = rule.substring(8, 9);
 
-        //вывод в консоли
-        System.out.println("Выполняемое значение " + RuleValue + " Состояние " + RuleState);
-        System.out.println("Новое значение " + NewValue + "  Шаг в " + Move + "  Новое значение " + NewState);
-
         // Установка нового значение
         if (!NewValue.equals("*"))
             TapeCurrent = NewValue;
 
         // Переместить ленту
-        if (Move.equals("L"))
+        if (Move.equals("L")){
             MoveTape("Left");
-        else if (Move.equals("R"))
-            MoveTape("Right");
+            Move = "ЛЕВО";
+        }
+        else if (Move.equals("R")) {
+            MoveTape("в Right");
+            Move = "в ПРАВО";
+        }
 
         // Остоновить или Установить новое состояние
-        if (Move.equals("H"))
-            State = "HALT";
+        if (Move.equals("H")) {
+            State = "ОСТОНОВЛЕНО";
+            Move = "НЕ выполняется";
+            RuleState = "Остоновлено";
+        }
         else
             State = NewState;
+
+        //вывод в консоли
+        proces.setText("Выбранное значение: " + RuleValue + "  Состояние: " + RuleState+"\n"
+                +"Новое значение: " + NewValue + "  Шаг: " + Move + "  Новое состояние: " + NewState);
+
 
     }
 
