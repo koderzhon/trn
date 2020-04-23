@@ -200,7 +200,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
         // Остоновить или Установить новое состояние
         if (Move.equals("H")) {
-            State = "ОСТОНОВЛЕНО";
+            State = "HALT";
             Move = "НЕ выполняется";
             RuleState = "Остоновлено";
         }
@@ -283,6 +283,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
                     JOptionPane.INFORMATION_MESSAGE);
         }
         UpdateDisplay();
+        proces.setText("");
     }
 
 
