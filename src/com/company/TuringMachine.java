@@ -87,6 +87,9 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         panel1.add(lblTapeRight);
         panel3.add(proces);
 
+        if (ProgramFile==null) // Текст с советом
+            proces.setText("                Загрузите Файл");
+
         JPanel panel2 = new JPanel();    //создаём панель для кнопок
 
         //далее описоваем кнопки и добовляем в панель2
@@ -96,10 +99,12 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
         btnGo = new JButton("Запустить");
         btnGo.addActionListener(e -> btnGoClick() );
+        btnGo.setEnabled(false);
         panel2.add(btnGo);
 
         btnStep = new JButton("Шаг");
         btnStep.addActionListener(e -> btnStepClick() );
+        btnStep.setEnabled(false);
         panel2.add(btnStep);
 
         btnReset = new JButton("Сброс");
@@ -142,6 +147,8 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
     private void btnLoadClick()  //реализация кнопки Загрузить
     {
+        btnGo.setEnabled(true);
+        btnStep.setEnabled(true);
         JFileChooser fc = new JFileChooser();
         int result = fc.showOpenDialog(this);
         ProgramFile = null;
@@ -156,16 +163,36 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     {
         if (!State.equals("HALT"))
         {
-            for (String rule : Program)
+            try
             {
+
+             for (String rule : Program)
+             {
                 if (CheckRule(rule))
                 {
                     ExecuteRule(rule);
                     UpdateDisplay();
                     break;
                 }
+             }
+            }catch (Exception ex){  //для вывода ошибки
+
+                showError();
+                proces.setText("                Загрузите Файл");
+
+
             }
         }
+    }
+
+    public void showError(){
+        JOptionPane.showMessageDialog(this,
+                "   Файл отсутсвует или " +
+                        "\n  Неправильно составлен", "Машина Тьюринга",
+                JOptionPane.INFORMATION_MESSAGE);
+        btnGo.setEnabled(false);
+        btnStep.setEnabled(false);
+        State = "HALT";
     }
 
     private boolean CheckRule(String rule)
@@ -178,6 +205,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
     private void ExecuteRule(String rule)
     {
+
         String RuleValue = rule.substring(0,1);
         String RuleState = rule.substring(2,3);
         String NewValue = rule.substring(4,5);
@@ -209,6 +237,9 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
         //вывод в консоли
         proces.setText("Выбранное значение: " + RuleValue + "  Состояние: " + RuleState+"\n"
+                +"Новое значение: " + NewValue + "  Шаг: " + Move + "  Новое состояние: " + NewState);
+
+        System.out.println("Выбранное значение: " + RuleValue + "  Состояние: " + RuleState+"\n"
                 +"Новое значение: " + NewValue + "  Шаг: " + Move + "  Новое состояние: " + NewState);
 
 
@@ -278,9 +309,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         }
         catch (Exception ex)
         {
-            JOptionPane.showMessageDialog(this,
-                    "Ошибка в файле программы.", "Машина Тьюринга",
-                    JOptionPane.INFORMATION_MESSAGE);
+            showError();
         }
         UpdateDisplay();
         proces.setText("");
