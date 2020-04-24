@@ -30,6 +30,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private JButton btnReset;
     private JButton btnLoad;
     private JTextArea proces;
+    String select;
     //private Font font;
 
     private String TapeLeft = "";
@@ -205,7 +206,6 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
     private void ExecuteRule(String rule)
     {
-
         String RuleValue = rule.substring(0,1);
         String RuleState = rule.substring(2,3);
         String NewValue = rule.substring(4,5);
@@ -236,9 +236,13 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
             State = NewState;
 
         //вывод в консоли
-        proces.setText("Выбранное значение: " + RuleValue + "  Состояние: " + RuleState+"\n"
-                +"Новое значение: " + NewValue + "  Шаг: " + Move + "  Новое состояние: " + NewState);
-
+        if(State.equals("HALT")){
+            proces.setText("Программа Остоновлено");
+        }else {
+            proces.setText("История Выполнение:\n" +
+                    "Старое значение: " + RuleValue + "  Старое Состояние: " + RuleState + "\n"
+                    + "Нынешняя значение: " + select + "  Шаг был: " + Move + "  Нынешняя состояние: " + NewState);
+        }
         System.out.println("Выбранное значение: " + RuleValue + "  Состояние: " + RuleState+"\n"
                 +"Новое значение: " + NewValue + "  Шаг: " + Move + "  Новое состояние: " + NewState);
 
@@ -274,9 +278,11 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         lblTapeLeft.setText(TapeLeft);
         lblTapeCurrent.setText(TapeCurrent);
         lblTapeRight.setText(TapeRight);
-
         lblState.setText("Сосотояние: " + State + "   ");
+        select = TapeCurrent;
     }
+
+
 
     private void LoadFile(File file)
     {
