@@ -30,17 +30,13 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private JButton btnReset;
     private JButton btnLoad;
     private JTextArea proces;
-    String select;
-    //private Font font;
+    private String select;
 
     private String TapeLeft = "";
     private String TapeCurrent = "";
     private String TapeRight = "";
-
     private String State = "A";
-
     private ArrayList<String> Program;
-
     private File ProgramFile;
 
     public TuringMachine()
@@ -281,8 +277,6 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         lblState.setText("Сосотояние: " + State + "   ");
         select = TapeCurrent;
     }
-
-
 
     private void LoadFile(File file)
     {
