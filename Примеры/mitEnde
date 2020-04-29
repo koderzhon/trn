@@ -1,0 +1,25 @@
+123456
+B
+_ B * R C
+0 B * L B
+1 B * L B
+2 B * L B
+3 B * H B
+4 B * L B
+5 B * L B
+6 B * L B
+7 B * L B
+8 B * L B
+9 B * L B
+0 C * L C
+1 C 9 R C
+2 C 8 R C
+3 C 7 H C
+4 C 6 R C
+5 C 5 R C
+6 C 4 R C
+7 C 3 R C
+8 C 2 R C
+9 C 1 R C
+_ C * H C
+

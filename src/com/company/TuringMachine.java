@@ -109,13 +109,14 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         btnReset.addActionListener(e -> btnResetClick() );
         panel2.add(btnReset);
 
+        btnLoadWith = new JButton("Чтение С конца");
+        btnLoadWith.addActionListener(e -> btnLoadClickWithEnd() );
+        btnLoadWith.setEnabled(false);
+        panel2.add(btnLoadWith);
+
         btnLoad = new JButton("Загрузить");
         btnLoad.addActionListener(e -> btnLoadClick() );
         panel2.add(btnLoad);
-
-        btnLoadWith = new JButton("Загрузить Ч С К");
-        btnLoadWith.addActionListener(e -> btnLoadClickWithEnd() );
-        panel2.add(btnLoadWith);
 
         this.add(panel1, BorderLayout.NORTH); //добовляем панели в наше окно приложение
         this.add(panel3,BorderLayout.CENTER);
@@ -143,7 +144,6 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private void btnResetClick() //реализация кнопки Сброса
     {
         LoadFile(ProgramFile);
-        LoadFileWithEnd(ProgramFile);
         proces.setText("");
         UpdateDisplay();
     }
@@ -152,6 +152,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     {
         btnGo.setEnabled(true);
         btnStep.setEnabled(true);
+        btnLoadWith.setEnabled(true);
         JFileChooser fc = new JFileChooser();
         int result = fc.showOpenDialog(this);
         ProgramFile = null;
@@ -163,16 +164,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     }
     private void btnLoadClickWithEnd()  //реализация кнопки Загрузить
     {
-        btnGo.setEnabled(true);
-        btnStep.setEnabled(true);
-        JFileChooser fc = new JFileChooser();
-        int result = fc.showOpenDialog(this);
-        ProgramFile = null;
-        if (result == JFileChooser.APPROVE_OPTION)
-        {
-            ProgramFile = fc.getSelectedFile();
-            LoadFileWithEnd(ProgramFile);
-        }
+        LoadFileWithEnd(ProgramFile);
     }
 
     private void ExecuteSingleStep() // выполнение шага
@@ -307,9 +299,9 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
 
             // Первая строка - начальное значение ленты
             String TapeLine = in.readLine();
-            TapeLeft = "";
-            TapeCurrent = TapeLine.substring(0,1); //TapeLine.length() - 2, TapeLine.length()
-            TapeRight = TapeLine.substring(1);
+            TapeLeft =  TapeLine.substring(0,TapeLine.length() - 1);
+            TapeCurrent = TapeLine.substring(TapeLine.length() - 1); //TapeLine.length() - 1, TapeLine.length()
+            TapeRight = "";
 
             // Первый символ следующей строки - начальное состояние
             String StateLine = in.readLine();

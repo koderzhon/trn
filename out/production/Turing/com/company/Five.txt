@@ -1,8 +1,0 @@
-_
-A
-_ A 1 L B
-_ B 0 L C
-_ C 1 L D
-_ D 1 L E
-_ E 1 L F
-_ F 0 H E

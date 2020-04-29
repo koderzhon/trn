@@ -24,16 +24,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="Test on Ubuntu">
-      <change afterPath="$PROJECT_DIR$/mitEnde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/test.java" afterDir="false" />
+    <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="Read With End">
+      <change afterPath="$PROJECT_DIR$/Примеры/mitEnde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mitEnde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Turing_jar/Turing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Turing_jar/Turing.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Turing/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/Five.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/com/company/Five.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plus7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plus7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/Add.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/Five.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/com/company/TuringMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plus7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Примеры/plus7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Примеры/Add.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Five.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Примеры/Five.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TuringMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TuringMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +74,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Примеры" />
       <recent name="D:\der Lehre\3Kurs\Teo Info\Turing\img" />
       <recent name="D:\der Lehre\3Kurs\Teo Info\Turing\src\com\company" />
       <recent name="D:\der Lehre\3Kurs\Teo Info\Turing" />
@@ -140,7 +145,7 @@
       <workItem from="1587684769273" duration="1483000" />
       <workItem from="1588060892173" duration="11271000" />
       <workItem from="1588137320114" duration="6403000" />
-      <workItem from="1588158710734" duration="2353000" />
+      <workItem from="1588158710734" duration="9390000" />
     </task>
     <task id="LOCAL-00001" summary="Comment">
       <created>1587540347780</created>
@@ -191,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588060994184</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Read With End">
+      <created>1588182978339</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588182978339</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +228,8 @@
     <MESSAGE value="Chika NAdo rabotat" />
     <MESSAGE value="Add complete Process" />
     <MESSAGE value="Test on Ubuntu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test on Ubuntu" />
+    <MESSAGE value="Read With End" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read With End" />
   </component>
   <component name="WindowStateProjectService">
     <state x="166" y="27" width="1024" height="693" key="#Project_Structure" timestamp="1588082447452">
@@ -231,38 +244,38 @@
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state x="384" y="175" width="588" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.693@0.27.1366.693" timestamp="1588101777738" />
-    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588079761671">
+    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588194931450">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
-    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1366.693@0.27.1366.693" timestamp="1588079761671" />
+    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1366.693@0.27.1366.693" timestamp="1588194931450" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1587283734538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587283734538" />
-    <state width="1320" height="138" key="GridCell.Tab.0.bottom" timestamp="1588182892922">
+    <state width="1320" height="138" key="GridCell.Tab.0.bottom" timestamp="1588194731614">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587289786802" />
-    <state width="1320" height="138" key="GridCell.Tab.0.bottom/0.27.1366.693@0.27.1366.693" timestamp="1588182892922" />
-    <state width="1320" height="138" key="GridCell.Tab.0.center" timestamp="1588182892921">
+    <state width="1320" height="138" key="GridCell.Tab.0.bottom/0.27.1366.693@0.27.1366.693" timestamp="1588194731614" />
+    <state width="1320" height="138" key="GridCell.Tab.0.center" timestamp="1588194731613">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
-    <state width="1320" height="138" key="GridCell.Tab.0.center/0.27.1366.693@0.27.1366.693" timestamp="1588182892921" />
-    <state width="1320" height="138" key="GridCell.Tab.0.left" timestamp="1588182892920">
+    <state width="1320" height="138" key="GridCell.Tab.0.center/0.27.1366.693@0.27.1366.693" timestamp="1588194731613" />
+    <state width="1320" height="138" key="GridCell.Tab.0.left" timestamp="1588194731613">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
-    <state width="1320" height="138" key="GridCell.Tab.0.left/0.27.1366.693@0.27.1366.693" timestamp="1588182892920" />
-    <state width="1320" height="138" key="GridCell.Tab.0.right" timestamp="1588182892921">
+    <state width="1320" height="138" key="GridCell.Tab.0.left/0.27.1366.693@0.27.1366.693" timestamp="1588194731613" />
+    <state width="1320" height="138" key="GridCell.Tab.0.right" timestamp="1588194731613">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
-    <state width="1320" height="138" key="GridCell.Tab.0.right/0.27.1366.693@0.27.1366.693" timestamp="1588182892921" />
-    <state x="166" y="27" width="1024" height="693" key="SettingsEditor" timestamp="1588079771517">
+    <state width="1320" height="138" key="GridCell.Tab.0.right/0.27.1366.693@0.27.1366.693" timestamp="1588194731613" />
+    <state x="166" y="27" width="1024" height="693" key="SettingsEditor" timestamp="1588194949321">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
-    <state x="166" y="27" width="1024" height="693" key="SettingsEditor/0.27.1366.693@0.27.1366.693" timestamp="1588079771517" />
+    <state x="166" y="27" width="1024" height="693" key="SettingsEditor/0.27.1366.693@0.27.1366.693" timestamp="1588194949321" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587285114137">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -275,5 +288,9 @@
       <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state x="374" y="27" width="618" height="693" key="find.popup/0.27.1366.693@0.27.1366.693" timestamp="1588081464057" />
+    <state x="0" y="27" width="1356" height="693" key="new project wizard" timestamp="1588194907904">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="0" y="27" width="1356" height="693" key="new project wizard/0.27.1366.693@0.27.1366.693" timestamp="1588194907904" />
   </component>
 </project>
