@@ -29,6 +29,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private JButton btnStep;
     private JButton btnReset;
     private JButton btnLoad;
+    private JButton btnLoadWith;
     private JTextArea proces;
     private String select;
 
@@ -43,7 +44,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     {
         //устанавливаем иконку, размер, названия для нашего приложение
         this.setIconImage(new ImageIcon("img//icon.png").getImage());
-        this.setSize(500,180);
+        this.setSize(570,200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle(" Машина Тьюринга");
         this.setLayout(new BorderLayout());
@@ -112,6 +113,10 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         btnLoad.addActionListener(e -> btnLoadClick() );
         panel2.add(btnLoad);
 
+        btnLoadWith = new JButton("Загрузить Ч С К");
+        btnLoadWith.addActionListener(e -> btnLoadClickWithEnd() );
+        panel2.add(btnLoadWith);
+
         this.add(panel1, BorderLayout.NORTH); //добовляем панели в наше окно приложение
         this.add(panel3,BorderLayout.CENTER);
         this.add(panel2, BorderLayout.SOUTH); //
@@ -138,6 +143,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
     private void btnResetClick() //реализация кнопки Сброса
     {
         LoadFile(ProgramFile);
+        LoadFileWithEnd(ProgramFile);
         proces.setText("");
         UpdateDisplay();
     }
@@ -153,6 +159,19 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         {
             ProgramFile = fc.getSelectedFile();
             LoadFile(ProgramFile);
+        }
+    }
+    private void btnLoadClickWithEnd()  //реализация кнопки Загрузить
+    {
+        btnGo.setEnabled(true);
+        btnStep.setEnabled(true);
+        JFileChooser fc = new JFileChooser();
+        int result = fc.showOpenDialog(this);
+        ProgramFile = null;
+        if (result == JFileChooser.APPROVE_OPTION)
+        {
+            ProgramFile = fc.getSelectedFile();
+            LoadFileWithEnd(ProgramFile);
         }
     }
 
@@ -278,6 +297,51 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
         select = TapeCurrent;
     }
 
+
+
+    private void LoadFileWithEnd(File file)
+    {
+        try
+        {
+            BufferedReader in = new BufferedReader(new FileReader(file));
+
+            // Первая строка - начальное значение ленты
+            String TapeLine = in.readLine();
+            TapeLeft = "";
+            TapeCurrent = TapeLine.substring(0,1); //TapeLine.length() - 2, TapeLine.length()
+            TapeRight = TapeLine.substring(1);
+
+            // Первый символ следующей строки - начальное состояние
+            String StateLine = in.readLine();
+            State = StateLine.substring(0,1);
+
+            // Остальные строки программы
+            Program = new ArrayList<String>();
+            String ProgramLine;
+            do
+            {
+                ProgramLine = in.readLine();
+                if (ProgramLine != null)
+                    Program.add(ProgramLine);
+            }while (ProgramLine != null);
+
+            in.close();
+
+        }
+        catch (Exception ex)
+        {
+            showError();
+        }
+        UpdateDisplay();
+        proces.setText("");
+    }
+
+    /*public void WithEnd(){
+        TapeLeft = "";
+        TapeCurrent = TapeLine.substring(0,1); //TapeLine.length() - 2, TapeLine.length()
+        TapeRight = TapeLine.substring(1);
+    }*/
+
     private void LoadFile(File file)
     {
         try
@@ -287,7 +351,7 @@ public class TuringMachine extends JFrame  //Наслудеутся от JFrame
             // Первая строка - начальное значение ленты
             String TapeLine = in.readLine();
             TapeLeft = "";
-            TapeCurrent = TapeLine.substring(0,1);
+            TapeCurrent = TapeLine.substring(0,1); //TapeLine.length() - 2, TapeLine.length()
             TapeRight = TapeLine.substring(1);
 
             // Первый символ следующей строки - начальное состояние

@@ -5,8 +5,36 @@
       <artifact name="Turing:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="" />
+    <list default="true" id="f39f654e-4744-4e8f-a313-53d94712f805" name="Default Changelist" comment="Test on Ubuntu">
+      <change afterPath="$PROJECT_DIR$/mitEnde" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Turing_jar/Turing.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Turing_jar/Turing.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Turing/com/company/Five.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Turing/com/company/Five.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plus7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plus7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TuringMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TuringMachine.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,69 +53,16 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>fra</find>
-      <find>turi</find>
-      <find>Listener</find>
-      <find>MoveTape</find>
-      <find>rule</find>
-      <find>icon</find>
-      <find>substring</find>
-      <find>State</find>
-      <find>lblTapeCurrent</find>
-      <find>lblState</find>
-      <find>proces.s</find>
-      <find>proces</find>
-      <find>program</find>
-      <find>showMessageDialog</find>
-      <find>Program</find>
-      <find>btnGo</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\der Lehre\3Kurs\Teo Info\Turing</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="46" />
-    <option name="width" value="936" />
-    <option name="height" value="735" />
-  </component>
   <component name="ProjectId" id="1akdNb6iutpQEmWkOPHisslmY3L" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Turing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Turing" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -95,7 +70,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -163,7 +138,9 @@
       <workItem from="1587653298103" duration="996000" />
       <workItem from="1587665048431" duration="9407000" />
       <workItem from="1587684769273" duration="1483000" />
-      <workItem from="1588060892173" duration="36000" />
+      <workItem from="1588060892173" duration="11271000" />
+      <workItem from="1588137320114" duration="6403000" />
+      <workItem from="1588158710734" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="Comment">
       <created>1587540347780</created>
@@ -207,11 +184,30 @@
       <option name="project" value="LOCAL" />
       <updated>1587622129707</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test on Ubuntu">
+      <created>1588060994184</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588060994184</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Comment" />
@@ -219,40 +215,65 @@
     <MESSAGE value="idea Ignore" />
     <MESSAGE value="Chika NAdo rabotat" />
     <MESSAGE value="Add complete Process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add complete Process" />
+    <MESSAGE value="Test on Ubuntu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test on Ubuntu" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="166" y="27" width="1024" height="693" key="#Project_Structure" timestamp="1588060926493">
+    <state x="166" y="27" width="1024" height="693" key="#Project_Structure" timestamp="1588082447452">
       <screen x="0" y="27" width="1366" height="693" />
     </state>
-    <state x="166" y="27" width="1024" height="693" key="#Project_Structure/0.27.1366.693@0.27.1366.693" timestamp="1588060926493" />
+    <state x="166" y="27" width="1024" height="693" key="#Project_Structure/0.27.1366.693@0.27.1366.693" timestamp="1588082447452" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587283921608">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587283921608" />
+    <state x="384" y="175" width="588" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588101777738">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="384" y="175" width="588" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.693@0.27.1366.693" timestamp="1588101777738" />
+    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588079761671">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="406" y="169" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1366.693@0.27.1366.693" timestamp="1588079761671" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1587283734538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587283734538" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1587289786802">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1320" height="138" key="GridCell.Tab.0.bottom" timestamp="1588182892922">
+      <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587289786802" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1587289786801">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1320" height="138" key="GridCell.Tab.0.bottom/0.27.1366.693@0.27.1366.693" timestamp="1588182892922" />
+    <state width="1320" height="138" key="GridCell.Tab.0.center" timestamp="1588182892921">
+      <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1587289786801">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1320" height="138" key="GridCell.Tab.0.center/0.27.1366.693@0.27.1366.693" timestamp="1588182892921" />
+    <state width="1320" height="138" key="GridCell.Tab.0.left" timestamp="1588182892920">
+      <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1587289786801">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1320" height="138" key="GridCell.Tab.0.left/0.27.1366.693@0.27.1366.693" timestamp="1588182892920" />
+    <state width="1320" height="138" key="GridCell.Tab.0.right" timestamp="1588182892921">
+      <screen x="0" y="27" width="1366" height="693" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587289786801" />
+    <state width="1320" height="138" key="GridCell.Tab.0.right/0.27.1366.693@0.27.1366.693" timestamp="1588182892921" />
+    <state x="166" y="27" width="1024" height="693" key="SettingsEditor" timestamp="1588079771517">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="166" y="27" width="1024" height="693" key="SettingsEditor/0.27.1366.693@0.27.1366.693" timestamp="1588079771517" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587285114137">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587285114137" />
+    <state x="206" y="27" width="432" height="693" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588145575642">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="206" y="27" width="432" height="693" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.693@0.27.1366.693" timestamp="1588145575642" />
+    <state x="374" y="27" width="618" height="693" key="find.popup" timestamp="1588081464057">
+      <screen x="0" y="27" width="1366" height="693" />
+    </state>
+    <state x="374" y="27" width="618" height="693" key="find.popup/0.27.1366.693@0.27.1366.693" timestamp="1588081464057" />
   </component>
 </project>
